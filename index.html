@@ -104,7 +104,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="book_now" class="btn btn-style">Book Now</button>
         </div>
 
         <div class="booking-content">
@@ -162,6 +162,12 @@
          const grandTotalPrice = subTotalPrice + Vat;
          document.getElementById('total').innerText = grandTotalPrice;
       }
+
+      const bookNow = document.getElementById('book_now');
+      bookNow.addEventListener('click', function(){
+          alert('Your Ticket Successfully Booked.');
+      })
+
 
     </script>
 
